@@ -50,3 +50,6 @@ alias \
 	alias bash="bash --init-file ~/.config/bash/.bashrc" \
 	alias yarn="yarn --use-yarnrc ~/.config/yarn/.yarnrc" \
 	alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
+	alias yw="yarn watch" \
+	alias yd="yarn dev" \
+	alias pyw="PORT=5555 yarn watch" \
