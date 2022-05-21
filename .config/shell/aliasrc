@@ -46,16 +46,19 @@ alias \
 
 # yarn custom alias for soydev <(")
 alias \
-	alias yarn="yarn --use-yarnrc '/home/long/.config/yarn/.yarnrc'" \
-	alias yi="yarn install" \
-	alias ya="yarn add" \
-	alias yr="yarn remove" \
-	alias yw="yarn watch" \
-	alias yd="yarn dev"
+	yarn="yarn --use-yarnrc '/home/long/.config/yarn/.yarnrc'" \
+	yi="yarn install" \
+	yb="yarn build" \
+	ya="yarn add" \
+	yr="yarn remove" \
+	ys="yarn start" \
+	yw="yarn watch" \
+	yd="yarn dev"
 
 # my custom alias
 alias \
 	vite="npm create vite@latest" \
-	alias pwastudio="npm init @magento/pwa" \
-	alias bash="bash --init-file ~/.config/bash/.bashrc" \
-	alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+	pwastudio="npm init @magento/pwa" \
+	pwaext="yarn create @larsroettig/pwa-extension" \
+	bash="bash --init-file ~/.config/bash/.bashrc" \
+	dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
