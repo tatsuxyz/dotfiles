@@ -7,9 +7,10 @@ export BROWSER="firefox"
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
 # sudo not required for some system commands
-for command in mount umount sv dnf updatedb su shutdown poweroff reboot ; do
+for command in mount umount sv dnf updatedb su shutdown poweroff reboot; do
 	alias $command="sudo $command"
-done; unset command
+done
+unset command
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
@@ -36,20 +37,28 @@ alias \
 	trem="transmission-remote" \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
-	v="$EDITOR" \
+	v="$EDITOR"
 
 # DNF custom alias
 alias \
-	alias up="dnf up" \
-	alias in="dnf in" \
+	up="dnf up" \
+	in="dnf in"
+
+# yarn custom alias for soydev <(")
+alias \
+	yarn="yarn --use-yarnrc '/home/long/.config/yarn/.yarnrc'" \
+	yi="yarn install" \
+	yb="yarn build" \
+	ya="yarn add" \
+	yr="yarn remove" \
+	ys="yarn start" \
+	yw="yarn watch" \
+	yd="yarn dev"
 
 # my custom alias
 alias \
 	vite="npm create vite@latest" \
-	alias pwastudio="npm init @magento/pwa" \
-	alias bash="bash --init-file ~/.config/bash/.bashrc" \
-	alias yarn="yarn --use-yarnrc ~/.config/yarn/.yarnrc" \
-	alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
-	alias yw="yarn watch" \
-	alias yd="yarn dev" \
-	alias pyw="PORT=5555 yarn watch" \
+	pwastudio="npm init @magento/pwa" \
+	pwaext="yarn create @larsroettig/pwa-extension" \
+	bash="bash --init-file ~/.config/bash/.bashrc" \
+	dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
