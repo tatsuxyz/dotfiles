@@ -68,3 +68,21 @@ bindkey -M visual '^[[P' vi-delete
 # Load syntax highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /home/long/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+
+# pnpm
+export PNPM_HOME="/home/long/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+#
+
+# deno
+export DENO_INSTALL="/home/long/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+# deno end
+#
+
+# go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# go end
+#
