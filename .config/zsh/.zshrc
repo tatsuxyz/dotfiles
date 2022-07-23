@@ -67,6 +67,7 @@ bindkey -M visual '^[[P' vi-delete
 ## PLUGINS ##
 # Load syntax highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /home/long/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
 # pnpm
