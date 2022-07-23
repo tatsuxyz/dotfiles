@@ -39,11 +39,6 @@ alias \
 	e="$EDITOR" \
 	v="$EDITOR"
 
-# DNF custom alias
-alias \
-	up="dnf up" \
-	in="dnf in"
-
 # yarn custom alias for soydev <(")
 alias \
 	yarn="yarn --use-yarnrc '/home/long/.config/yarn/.yarnrc'" \
